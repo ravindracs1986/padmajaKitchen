@@ -71,24 +71,35 @@
                     
                     
                      <form id="login-form-wrap" action="${pageContext.request.contextPath}/SaveVideoController.do" method="post">
-
-
-                                <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section.</p>
-
-                                <p class="form-row form-row-first">
-                                    <label for="category">Category<span class="required">*</span>
+								
+                                            <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
+                                                <label class="" for="category">Category<abbr title="required" class="required">*</abbr>
+                                                </label>
+                                                <select class="country_to_state country_select" id="category" name="category">
+                                                    <option value="">Select a Category€¦</option>
+                                                    <option value="NONVEG">NON-VEG</option>
+                                                    <option value="VEG">VEG</option>
+                                                </select>
+                                            </p>
+                                
+                                
+                                
+                                <p class="form-row form-row-last">
+                                    <label for="videoName">VideoName <span class="required">*</span>
                                     </label>
-                                    <input type="text" id="category" name="category" class="input-text">
+                                    <input type="text" id="videoName" name="videoName" class="input-text">
                                 </p>
+                                
+                                
                                 <p class="form-row form-row-last">
                                     <label for="videoUrl">VideoUrl <span class="required">*</span>
                                     </label>
-                                    <input type="videoUrl" id="VideoUrl" name="VideoUrl" class="input-text">
+                                    <input type="text" id="videoUrl" name="videoUrl" class="input-text">
                                 </p>
                                 <p class="form-row form-row-last">
                                     <label for="youTubeId">YouTubeId <span class="required">*</span>
                                     </label>
-                                    <input type="youTubeId" id="youTubeId" name="youTubeId" class="input-text">
+                                    <input type="text" id="youTubeId" name="youTubeId" class="input-text">
                                 </p>
                                 <div class="clear"></div>
 

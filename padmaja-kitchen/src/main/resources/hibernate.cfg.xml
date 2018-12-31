@@ -1,16 +1,16 @@
-<!-- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/smsaware_smsaware?autoReconnect=true</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/padmaja_kitchen?autoReconnect=true</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">smsaware@1986</property>
         <property name="show_sql">true</property>		
-        <property name="hbm2ddl.auto">create/update</property>
+        <!-- <property name="hbm2ddl.auto">create/update</property> -->
         
-        c3p0 config http://www.hibernate.org/214.html
+       
         <property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>        
         <property name="hibernate.c3p0.acquire_increment">1</property>
         <property name="hibernate.c3p0.idle_test_period">60</property>
@@ -27,13 +27,7 @@
         <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
         <property name="hibernate.current_session_context_class">thread</property>
         
-       <mapping class="com.smsaware.model.Registration"/>
-       <mapping class="com.smsaware.model.Address"/>
-        <mapping class="com.smsaware.model.UserOTP"/>
-        <mapping class="com.smsaware.model.Comments"/>
-        <mapping class="com.smsaware.model.ReplyComments"/>
-        <mapping class="com.smsaware.model.Contacts"/>
-        <mapping class="com.smsaware.pservice.MessageHistory"/>
+       <mapping class="com.padmaja.kitchen.model.Video"/>
+      
     </session-factory>
 </hibernate-configuration>
- -->
