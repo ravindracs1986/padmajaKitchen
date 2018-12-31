@@ -1,7 +1,125 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<display-name>padmaja-kitchen</display-name>
+
+   <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+   
+    <!-- servlet definition -->
+	<!-- <servlet>
+	        <servlet-name>ExceptionHandler</servlet-name>
+	        <servlet-class>com.smsaware.exception.ExceptionHandler</servlet-class>
+	</servlet>
+	servlet mappings
+	<servlet-mapping>
+	        <servlet-name>ExceptionHandler</servlet-name>
+	        <url-pattern>/views/ExceptionHandler</url-pattern>
+	</servlet-mapping> -->
+    
+    
+    <servlet>
+        <servlet-name>AdminController</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.AdminController</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>AdminController</servlet-name>
+        <url-pattern>/AdminController.do</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>SaveVideoController</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.SaveVideoController</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>SaveVideoController</servlet-name>
+        <url-pattern>/SaveVideoController.do</url-pattern>
+    </servlet-mapping>
+    
+    <!-- <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>com.smsaware.service.RegistrationServlet</servlet-class>
+    </servlet> -->
+    <!-- <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/RegistrationServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.smsaware.service.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.smsaware.service.ProfileServlet</servlet-class>
+    </servlet>
+   <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateProfileSevlet</servlet-name>
+        <servlet-class>com.smsaware.service.UpdateProfileSevlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>UpdateProfileSevlet</servlet-name>
+        <url-pattern>/UpdateProfileSevlet.do</url-pattern>
+    </servlet-mapping> -->
+    
+    
+    <!-- <servlet>
+	  <servlet-name>jersey-serlvet</servlet-name>
+	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+	  <init-param>
+	    <param-name>com.sun.jersey.config.property.packages</param-name>
+	    <param-value>com.padmaja.kitchen.servlet</param-value>
+	  </init-param>
+	  <init-param>
+		<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+		<param-value>true</param-value>
+	</init-param>
+	  <load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>jersey-serlvet</servlet-name>
+	  <url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+    
+    error-code related error pages
+	<error-page>
+	<error-code>404</error-code>
+	<location>/ExceptionHandler</location>
+	</error-page>
+	<error-page>
+	<error-code>403</error-code>
+	<location>/ExceptionHandler</location>
+	</error-page>
+	 
+	exception-type related error pages
+	<error-page>
+	<exception-type>java.lang.Throwable</exception-type>
+	<location>/ExceptionHandler</location>
+	</error-page>
+	<error-page>
+    <exception-type>
+          javax.servlet.ServletException
+    </exception-type >
+    <location>/ExceptionHandler</location>
+  </error-page>
+
+	<error-page>
+	    <exception-type>java.io.IOException</exception-type >
+	    <location>/ExceptionHandler</location>
+	</error-page> -->
+	
 </web-app>
