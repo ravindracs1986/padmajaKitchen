@@ -14,7 +14,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
     </welcome-file-list> -->
     
     <welcome-file-list>
-    <welcome-file>index</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
     
    
@@ -54,7 +54,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   </servlet>  
     <servlet-mapping>
     <servlet-name>FindVideoController</servlet-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/FindVideoController</url-pattern>
 	</servlet-mapping>
     
     <!--  <servlet>
