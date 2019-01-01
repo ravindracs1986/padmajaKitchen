@@ -56,6 +56,25 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
     <servlet-name>FindVideoController</servlet-name>
     <url-pattern>/FindVideoController</url-pattern>
 	</servlet-mapping>
+	
+	 <servlet>
+        <servlet-name>ContactUs</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.ContactUs</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>ContactUs</servlet-name>
+        <url-pattern>/ContactUs</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>AboutUs</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.AboutUs</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>AboutUs</servlet-name>
+        <url-pattern>/AboutUs</url-pattern>
+    </servlet-mapping>
+    
     
     <!--  <servlet>
         <servlet-name>FindVideoController</servlet-name>
