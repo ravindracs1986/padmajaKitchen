@@ -9,5 +9,6 @@ import com.padmaja.kitchen.model.Video;
 public interface IVideoDao {
 
 	public Video submitVideo(Video video);
+	public List<Video> getVideos();
 	
 }

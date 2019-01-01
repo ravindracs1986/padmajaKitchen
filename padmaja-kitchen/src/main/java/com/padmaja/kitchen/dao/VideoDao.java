@@ -25,7 +25,7 @@ public class VideoDao implements IVideoDao{
 			session.save(video);
 			
 			result = (List<Video>) session.createQuery("from Video R WHERE R.youtube_id = '" + youtubeId + "'").list();
-
+			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
 				tx.rollback();
@@ -36,6 +36,28 @@ public class VideoDao implements IVideoDao{
 		}
 		
 		return result.get(0);
+	}
+
+	public List<Video> getVideos() {
+		SessionFactory factory = HibernateUtil.getSessionFactory();
+		Session session = factory.openSession();
+		Transaction tx = null;
+		List<Video> result=null;
+		
+		try {
+			tx = session.beginTransaction();
+			result = (List<Video>) session.createQuery("from Video").list();
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		
+		return result;
 	}
 
 }
