@@ -11,4 +11,7 @@ public interface IVideoDao {
 	public Video submitVideo(Video video);
 	public List<Video> getVideos();
 	
+	public List<Video> getNonVegVideos();
+	public List<Video> getVegVideos();
+	
 }

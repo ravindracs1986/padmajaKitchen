@@ -76,6 +76,27 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
     </servlet-mapping>
     
     
+     <servlet>
+        <servlet-name>VegRecipeType</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.VegRecipeType</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>VegRecipeType</servlet-name>
+        <url-pattern>/VegRecipeType</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>NonVegRecipeType</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.NonVegRecipeType</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>NonVegRecipeType</servlet-name>
+        <url-pattern>/NonVegRecipeType</url-pattern>
+    </servlet-mapping>
+    
+    
+    
     <!--  <servlet>
         <servlet-name>FindVideoController</servlet-name>
         <servlet-class>com.padmaja.kitchen.servlet.FindVideoController</servlet-class>

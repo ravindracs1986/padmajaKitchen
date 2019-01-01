@@ -59,5 +59,51 @@ public class VideoDao implements IVideoDao{
 		
 		return result;
 	}
+	
+	
+	public List<Video> getNonVegVideos() {
+		SessionFactory factory = HibernateUtil.getSessionFactory();
+		Session session = factory.openSession();
+		Transaction tx = null;
+		List<Video> result=null;
+		
+		try {
+			tx = session.beginTransaction();
+			result = (List<Video>) session.createQuery("from Video where video_category='NONVEG'").list();
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		
+		return result;
+	}
+	
+	
+	public List<Video> getVegVideos() {
+		SessionFactory factory = HibernateUtil.getSessionFactory();
+		Session session = factory.openSession();
+		Transaction tx = null;
+		List<Video> result=null;
+		
+		try {
+			tx = session.beginTransaction();
+			result = (List<Video>) session.createQuery("from Video where video_category='VEG'").list();
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		
+		return result;
+	}
 
 }

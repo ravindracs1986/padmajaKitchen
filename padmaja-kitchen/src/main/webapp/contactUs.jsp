@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Padmaja Kitchen</title>
-
+<link rel="icon" href="assets/img/logo.png">
 <!-- Google Fonts -->
 <link
 	href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600'
@@ -92,15 +92,15 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.jsp">Home</a></li>
-						<li><a href="shop.jsp">VEG RECIPES</a></li>
-						<li><a href="single-product.jsp">NONVEG RECIPES</a></li>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="${pageContext.request.contextPath}/VegRecipeType">VEG RECIPES</a></li>
+						<li><a href="${pageContext.request.contextPath}/NonVegRecipeType">NONVEG RECIPES</a></li>
 						<!-- <li><a href="cart.jsp">Cart</a></li>
                         <li><a href="checkout.jsp">Checkout</a></li>
                         <li><a href="#">Category</a></li>
                         <li><a href="#">Others</a></li>-->
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="${pageContext.request.contextPath}/AboutUs">About</a></li>
+						<li class="active"><a href="${pageContext.request.contextPath}/ContactUs">Contact</a></li>
 					</ul>
 				</div>
 			</div>
