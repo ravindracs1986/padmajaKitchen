@@ -50,21 +50,23 @@
 
 	<c:set var="videoList" value="${requestScope.videoList}" />
 
-
-	<div class="header-area">
-		<div class="container">
-			<div class="row"></div>
-		</div>
-	</div>
 	<!-- End header area -->
 
 	<div class="site-branding-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
+				<!-- <div class="col-sm-6">
 					<div class="logo">
 						<h1>
-							<a href="./"><img src="assets/img/logo.png"></a>
+							<a href="./"><img src="assets/img/logo.png"/></a>
+						</h1>
+					</div>
+				</div> -->
+				
+				<div class="col-md-12 col-sm-12">
+					<div class="logo" style="background-color: transparent;">
+						<h1>
+							<a href="./"><img src="assets/img/logo.png"/></a><img src="assets/img/banner.png" />
 						</h1>
 					</div>
 				</div>
