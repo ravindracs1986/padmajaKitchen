@@ -1,6 +1,7 @@
 package com.padmaja.kitchen.model;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -29,7 +30,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "video_registration")
-public class Video {
+public class Video implements Serializable{
 
 	private static final long serialVersionUID = -4393320270992003990L;
 

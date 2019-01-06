@@ -76,7 +76,7 @@
                             </div> -->
 
 							<form id="login-form-wrap"
-								action="${pageContext.request.contextPath}/AdminController.do"
+								action="${pageContext.request.contextPath}/AdminController"
 								method="post">
 
 

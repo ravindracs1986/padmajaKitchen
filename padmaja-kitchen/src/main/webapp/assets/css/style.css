@@ -1089,6 +1089,13 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 }
 
 
+#login-collapse-wrap {
+    background: none repeat scroll 0 0 #f4f4f4;
+    margin-bottom: 30px;
+    padding: 25px;
+}
+
+
 #login-form-wrap, #coupon-collapse-wrap {
     background: none repeat scroll 0 0 #f4f4f4;
     margin-bottom: 30px;

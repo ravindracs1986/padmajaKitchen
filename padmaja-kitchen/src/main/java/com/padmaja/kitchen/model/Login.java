@@ -15,6 +15,8 @@ public class Login implements Serializable {
 	private String password;
 
 	private Long phone;
+	
+	private boolean userFound;
 
 	public String getEmail() {
 		return email;
@@ -39,6 +41,15 @@ public class Login implements Serializable {
 	public void setPhone(Long phone) {
 		this.phone = phone;
 	}
+
+	public boolean isUserFound() {
+		return userFound;
+	}
+
+	public void setUserFound(boolean userFound) {
+		this.userFound = userFound;
+	}
+	
 
 }
 
