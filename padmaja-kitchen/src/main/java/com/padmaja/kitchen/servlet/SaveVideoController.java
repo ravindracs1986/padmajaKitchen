@@ -33,7 +33,7 @@ public class SaveVideoController extends HttpServlet{
 		
 		
 		if (category!=null && videoName!=null && videoUrl!=null && youTubeId!=null) {
-			
+			System.out.println("Saving video in database url:"+videoUrl);
 			Video video = new Video();
 			video.setVideo_category(category);
 			video.setVideo_name(videoName);

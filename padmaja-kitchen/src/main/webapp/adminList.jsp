@@ -81,12 +81,12 @@
                      <div class="woocommerce">
 						   <div class="woocommerce-info">Want to save Video? <a class="showlogin" data-toggle="collapse" href="#login-collapse-wrap" aria-expanded="false" aria-controls="login-collapse-wrap">Click here Save YouTube Video</a>
 						   </div>
-						   <form enctype="multipart/form-data" class="checkout_coupon collapse" method="post" action="#" id="login-collapse-wrap" >
+						   <form class="checkout_coupon collapse" method="post" action="${pageContext.request.contextPath}/SaveVideoController" id="login-collapse-wrap" >
 									  
 									  <div class="form-row">
 										    <div class="form-group col-md-6">
 										      <label for="category">Category:</label>
-										      <select id="category" class="form-control" id="category" name="category">
+										      <select id="category" class="form-control"  name="category">
 										        <option selected>Select a Category¦</option>
 	                                 			<option value="NONVEG">NON-VEG</option>
 	                                			<option value="VEG">VEG</option>
@@ -95,25 +95,25 @@
 										    </div>
 										    <div class="form-group col-md-6">
 										      <label for="videoName">Video Name:</label>
-										      <input type="text" class="form-control" id="videoName" name="videoName" placeholder="VideoName">
+										      <input type="text" class="form-control"  name="videoName" placeholder="VideoName">
 										    </div>
 									  </div>
 									  
 									  <div class="form-row">
 									    <div class="form-group col-md-6">
 									      <label for="videoUrl">Video Url:</label>
-									      <input type="text" class="form-control" id="videoUrl" placeholder="VideoUrl" name="VideoUrl">
+									      <input type="text" class="form-control"  placeholder="VideoUrl" name="videoUrl">
 									    </div>
 									    <div class="form-group col-md-6">
-									      <label for="YouTubeId">YouTube Id:</label>
-									      <input type="text" class="form-control" id="YouTubeId" placeholder="YouTubeId" name="YouTubeId">
+									      <label for="youTubeId">YouTube Id:</label>
+									      <input type="text" class="form-control"  placeholder="YouTubeId" name="youTubeId">
 									    </div>
 									  </div>
 									  <!-- <div class="btn pull-right">
 									      <button type="submit" class="btn btn-primary">Save Video</button>
 									    </div> -->
-									  
-									<button type="submit" class="btn btn-primary">Save Video</button> 
+									  <input type="submit" value="Save Video" name="Save" class="button btn btn-primary"/>
+								<!-- 	<button type="submit" class="btn btn-primary">Save Video</button>  -->
 									</form>
 						   
 						   <!-- Blog Page -->
