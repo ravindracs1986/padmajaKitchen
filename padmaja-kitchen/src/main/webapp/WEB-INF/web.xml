@@ -99,6 +99,34 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
         <url-pattern>/VideoDetails</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>ViewAllNew</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.ViewAllNew</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>ViewAllNew</servlet-name>
+        <url-pattern>/ViewAllNew</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>ViewAllPopular</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.ViewAllPopular</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>ViewAllPopular</servlet-name>
+        <url-pattern>/ViewAllPopular</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ViewAllRecently</servlet-name>
+        <servlet-class>com.padmaja.kitchen.servlet.ViewAllRecently</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>ViewAllRecently</servlet-name>
+        <url-pattern>/ViewAllRecently</url-pattern>
+    </servlet-mapping>
+    
     
     <servlet>
 	  <servlet-name>jersey-serlvet</servlet-name>
