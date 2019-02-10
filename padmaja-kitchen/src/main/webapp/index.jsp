@@ -226,9 +226,7 @@
 					<div class="latest-product">
 						<h2 class="section-title">Top Video</h2>
 						<div class="product-carousel">
-						
-						
-							<c:forEach var="product" items="${videoList}" varStatus="i">
+						  <c:forEach var="product" items="${videoList}" varStatus="i">
 								<%-- ${product}<br> --%>
 								<div class="single-product">
 									<div class="product-f-image">
@@ -251,12 +249,7 @@
 									</h2>
 								</div>
 							</c:forEach>
-							
-							
-							
-							
-							
-						</div>
+							</div>
 					</div>
 				</div>
 			</div>
